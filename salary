@@ -1,0 +1,16 @@
+class Employee:
+    employeeList = []
+    def insert_employee(self, s, a, n):
+        self.employeeList.append([s,a,n])
+    def sort_employee(self):
+        self.employeeList.sort(reverse=True)
+    def show_employee(self):
+        return self.employeeList
+
+obj = Employee()
+obj.insert_employee(1000, 30, 'Nazim')
+obj.insert_employee(2000, 20, 'Richard')
+obj.insert_employee(1500, 25, 'Nari')
+obj.insert_employee(2000, 31, 'Nazim')
+obj.sort_employee()
+print(obj.show_employee())
